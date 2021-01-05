@@ -1,0 +1,10 @@
+21	.	TF_binding_site	5011006	5011020	3.637831986	-	.	binding_matrix_stable_id=ENSPFM0404;stable_id=ENSM00648832284;transcription_factor_complex=MYBL1::ONECUT2
+21	.	TF_binding_site	5011007	5011021	-19.82069547	+	.	binding_matrix_stable_id=ENSPFM0494;stable_id=ENSM00589827334;transcription_factor_complex=SOX10%2CSOX8%2CSOX9%2CSOX15%2CSOX14%2CSOX2%2CSRY%2CSOX18%2CSOX21
+21	.	TF_binding_site	5011011	5011020	7.211589029	+	.	binding_matrix_stable_id=ENSPFM0279;stable_id=ENSM00597420573;transcription_factor_complex=GRHL1%2CTFCP2
+21	.	TF_binding_site	5011013	5011028	5.965384096	+	.	binding_matrix_stable_id=ENSPFM0606;stable_id=ENSM00559397905;transcription_factor_complex=TFCP2
+21	.	TF_binding_site	5011017	5011029	4.337693472	+	.	binding_matrix_stable_id=ENSPFM0394;stable_id=ENSM00596791370;transcription_factor_complex=MYBL1::EOMES
+21	.	TF_binding_site	5011018	5011027	2.605897923	+	.	binding_matrix_stable_id=ENSPFM0029;stable_id=ENSM00528061280;transcription_factor_complex=CEBPE%2CGCM1::CEBPB%2CCEBPG%2CCEBPB%2CTEAD4::CEBPD%2CCEBPD
+21	.	TF_binding_site	5011018	5011039	0.125985584	+	.	binding_matrix_stable_id=ENSPFM0521;stable_id=ENSM00623122364;transcription_factor_complex=TEAD4::CEBPD%2CTEAD4::CEBPB
+21	.	TF_binding_site	5011019	5011038	1.628109774	+	.	binding_matrix_stable_id=ENSPFM0512;stable_id=ENSM00535998353;transcription_factor_complex=TBX19%2CT
+21	.	TF_binding_site	5011025	5011045	1.643502608	+	.	binding_matrix_stable_id=ENSPFM0218;stable_id=ENSM00652841413;transcription_factor_complex=GCM1::ELK1
+21	.	TF_binding_site	5011029	5011041	2.112138721	-	.	binding_matrix_stable_id=ENSPFM0415;stable_id=ENSM00570593141;transcription_factor_complex=NFKB2%2CNFKB1
