@@ -435,6 +435,10 @@ def load_broad_repurposing_hub2(path = './data', no_cid = False):
 	else:
 		return df.smiles.values, df.title.values, df.cid.values.astype(str)
 
+def load_drug_bank(path = './data/drugbank_broad_common.csv'):
+	df = pd.read_csv(path, sep = ',')
+	return df.smiles.values, df.title.values
+
 def load_antiviral_drugs(path = './data', no_cid = False):
 	url = 'https://dataverse.harvard.edu/api/access/datafile/4159652'
 	if not os.path.exists(path):
@@ -527,7 +531,7 @@ def load_EGFR():
 	target_name = 'EGFR'
 	return target, target_name
 
-def MYC():
+def load_MYC():
 	target = 'MDFFRVVENQQPPATMPLNVSFTNRNYDLDYDSVQPYFYCDEEENFYQQQQQSELQPPAPSEDIWKKFELLPTPPLSPSRRSGLCSPSYVAVTPFSLRGDNDGGGGSFSTADQLEMVTELLGGDMVNQSFICDPDDETFIKNIIIQDCMWSGFSAAAKLVSEKLASYQAARKDSGSPNPARGHSVCSTSSLYLQDLSAAASECIDPSVVFPYPLNDSSSPKSCASQDSSAFSPSSDSLLSSTESSPQGSPEPLVLHEETPPTTSSDSEEEQEDEEEIDVVSVEKRQAPGKRSESGSPSAGGHSKPPHSPLVLKRCHVSTHQHNYAAPPSTRKDYPAAKRVKLDSVRVLRQISNNRKCTSPRSSDTEENVKRRTHNVLERQRRNELKRSFFALRDQIPELENNEKAPKVVILKKATAYILSVQAEEQKLISEEDLLRKRREQLKHKLEQLRNSCA'
 	target_name = 'MYC'
 	return target, target_name
