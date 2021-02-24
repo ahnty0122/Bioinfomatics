@@ -439,6 +439,10 @@ def load_drug_bank(path = './data/drugbank_broad_common.csv'):
 	df = pd.read_csv(path, sep = ',')
 	return df.smiles.values, df.title.values
 
+def load_repurposing_new(path = './data/repurposing_new.csv'):
+	df = pd.read_csv(path, sep = ',')
+	return df.smiles.values, df.title.values
+
 def load_antiviral_drugs(path = './data', no_cid = False):
 	url = 'https://dataverse.harvard.edu/api/access/datafile/4159652'
 	if not os.path.exists(path):
