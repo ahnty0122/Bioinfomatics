@@ -1,5 +1,6 @@
 import pandas as pd
 
+# cell line 있는 것만 저장
 f1 = pd.read_csv("1_result.txt", delimiter = '\t')
 f2 = pd.read_csv("2_result.txt", delimiter = '\t')
 f3 = pd.read_csv("3_result.txt", delimiter = '\t')
