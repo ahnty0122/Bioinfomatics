@@ -50,14 +50,14 @@ def mismatch(p,q):
 
 # oncogene list에 TF있는지 확인하는 함수
 def check_ocg(ocg_list, TF):
-    if TF == ocg_list:
+    if TF not in ocg_list:
         return False
     else:
         return True
 
 # tumor suppressor gene list에 TF있는지 확인하는 함수
 def check_tsg(tsg_list, TF):
-    if TF == tsg_list:
+    if TF not in tsg_list:
         return False
     else:
         return True
