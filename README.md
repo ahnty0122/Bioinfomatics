@@ -28,10 +28,10 @@
 <img src="https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG" width="70%" height="80%"/>
 
 ### Using Table
-* actions table
-* proteins table
-* sets table
-* sets_items table 
+* network.actions table
+* items.proteins table
+* evidence.sets table
+* evidence.sets_items table 
 
 ### Method Step
 * Protein id -> Protein name (Join actions Table & proteins Table)
