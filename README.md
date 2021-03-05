@@ -54,7 +54,7 @@
 
 ## _5. Drug Target Interaction_
 #### Goal
-* [Drug repurposing] Drug - Target binding affinity score prediction
+* __[Drug repurposing]__ Drug - Target binding affinity score prediction
 
 #### Method
 * Drug encoder, Target encoder specification
