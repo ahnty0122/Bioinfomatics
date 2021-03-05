@@ -1,58 +1,58 @@
 ## TFBS Data Analysis
-#### Goal
+### Goal
 * Transcription Factor Binding Site Data preprocessing
 * Reduce Time consumption using multiprocessing in Dataframe 
 
-#### Data
+### Data
 1. Chromosome Transcription Factor Binding Site DB
 2. DNA sequence Data
 3. Oncogene Data
 4. Tumor Suppressor gene Data
 
-#### Preprocessing (ver1)
+### Preprocessing (ver1)
 1. Add DNA sequence data (using RestAPI or fasta file, multiprocessing)
 2. Split Dataframe column (using explode, str.split)
 3. Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
 
-#### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
+### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
 1. Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
 2. Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
 3. Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)
-
+* * *
 ## Pathway Database
-#### Goal
+### Goal
 * STRING Pathway Database(PostgreSQL Database dump file) Annotation
 
-#### Database Table
+### Database Table
 ![stringdatabaseschema](https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG)
 
-##### Using Table
+#### Using Table
 1. actions table
 2. proteins table
 3. sets table
 4. sets_items table 
 
-#### Method Step
+### Method Step
 1. Protein id -> Protein name (Join actions Table & proteins Table)
 2. Specify comment of pathway (Join sets Table & sets_items Table)
 3. Join result data of step 1, step 2
-
+* * *
 ## Gene Variant Check
-#### Data
+### Data
 1. NCBI clinvar Data (variant information)
 2. Gene Sequence Data
 
-#### Goal
+### Goal
 * Check gene variant location
-
+* * *
 ## Multiprocessing mapping
 * Application of Multiprocessing
-
+* * *
 ## Drug Target Interaction
-#### Goal
+### Goal
 * [Drug repurposing] Drug - Target binding affinity score prediction
 
-#### Method
+### Method
 1. Drug encoder, Target encoder specification
 2. Data encoding and split
 3. Model configuration Generation (parameter)
@@ -61,12 +61,12 @@
 6. Model Prediction and Repurposing
 7. Model Saving and Loading
 
-#### Data
+### Data
 1. [BindingDB](https://www.bindingdb.org/bind/index.jsp)
 2. [DAVIS](http://staff.cs.utu.fi/~aatapa/data/DrugTarget/)
 3. [KIBA](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-017-0209-z)
 
-#### File Structure
+### File Structure
 ```bash
 ├── DeepPurpose
 │   ├── DTI.py
@@ -79,7 +79,7 @@
 │   └── pretrained_models
 └── data
 ``` 
-#### Input / Output example
+### Input / Output example
 ```
 ----input----
 Drug1_SMILES Drug1_Name Target1_Seq Target1_Name
