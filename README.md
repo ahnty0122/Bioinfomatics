@@ -34,7 +34,6 @@
 ----input----
 Drug1_SMILES Drug1_Name Target1_Seq Target1_Name
 Drug1_SMILES Drug1_Name Target1_Seq Target1_Name
-
 ```
 ```
 ----output----
