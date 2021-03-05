@@ -83,6 +83,9 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 * STRING Pathway Database(PostgreSQL Database dump file) Annotation
 
 #### Database Table
+![stringdatabaseschema](https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG)
+
+##### Using Table
 1. actions table
 2. proteins table
 3. sets table
