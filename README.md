@@ -4,17 +4,17 @@
 * Reduce Time consumption using multiprocessing in Dataframe 
 
 #### Data
-* Chromosome Transcription Factor Binding Site DB
+* Transcription Factor Binding Site DB
 * DNA sequence Data
 * Oncogene Data
 * Tumor Suppressor gene Data
 
-#### Preprocessing (ver1)
+#### Preprocessing (TFBS ver1)
 * Add DNA sequence data (using RestAPI or fasta file, multiprocessing)
 * Split Dataframe column (using explode, str.split)
 * Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
 
-#### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
+#### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (TFBS ver2)
 * Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
 * Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
 * Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)  
@@ -22,7 +22,7 @@
 
 ## _2. Pathway Database_
 #### Goal
-* STRING Pathway Database(PostgreSQL Database dump file) Annotation
+* STRING Pathway Database(__PostgreSQL Database dump file__) Annotation
 
 #### Database Schema
 <img src="https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG" width="70%" height="80%"/>
