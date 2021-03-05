@@ -4,67 +4,73 @@
 * Reduce Time consumption using multiprocessing in Dataframe 
 
 ### Data
-1. Chromosome Transcription Factor Binding Site DB
-2. DNA sequence Data
-3. Oncogene Data
-4. Tumor Suppressor gene Data
+* Chromosome Transcription Factor Binding Site DB
+* DNA sequence Data
+* Oncogene Data
+* Tumor Suppressor gene Data
 
 ### Preprocessing (ver1)
-1. Add DNA sequence data (using RestAPI or fasta file, multiprocessing)
-2. Split Dataframe column (using explode, str.split)
-3. Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
+* Add DNA sequence data (using RestAPI or fasta file, multiprocessing)
+* Split Dataframe column (using explode, str.split)
+* Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
 
 ### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
-1. Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
-2. Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
-3. Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)
-* * *
+* Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
+* Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
+* Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)
+
+
+
 ## Pathway Database
 ### Goal
 * STRING Pathway Database(PostgreSQL Database dump file) Annotation
 
-### Database Table
+### Database Schema
 <img src="https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG" width="70%" height="80%"/>
 
 ### Using Table
-1. actions table
-2. proteins table
-3. sets table
-4. sets_items table 
+* actions table
+* proteins table
+* sets table
+* sets_items table 
 
 ### Method Step
-1. Protein id -> Protein name (Join actions Table & proteins Table)
-2. Specify comment of pathway (Join sets Table & sets_items Table)
-3. Join result data of step 1, step 2
-* * *
+* Protein id -> Protein name (Join actions Table & proteins Table)
+* Specify comment of pathway (Join sets Table & sets_items Table)
+* Join result data of step 1, step 2
+
+
 ## Gene Variant Check
 ### Data
-1. NCBI clinvar Data (variant information)
-2. Gene Sequence Data
+* NCBI clinvar Data (variant information)
+* Gene Sequence Data
 
 ### Goal
 * Check gene variant location
-* * *
+
+
 ## Multiprocessing mapping
 * Application of Multiprocessing
-* * *
+
+
+
 ## Drug Target Interaction
 ### Goal
 * [Drug repurposing] Drug - Target binding affinity score prediction
 
 ### Method
-1. Drug encoder, Target encoder specification
-2. Data encoding and split
-3. Model configuration Generation (parameter)
-4. Model Initialization
-5. Model Training
-6. Model Prediction and Repurposing
-7. Model Saving and Loading
+* Drug encoder, Target encoder specification
+* Data encoding and split
+* Model configuration Generation (parameter)
+* Model Initialization
+* Model Training
+* Model Prediction and Repurposing
+* Model Saving and Loading
 
 ### Data
-1. [BindingDB](https://www.bindingdb.org/bind/index.jsp)
-2. [DAVIS](http://staff.cs.utu.fi/~aatapa/data/DrugTarget/)
-3. [KIBA](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-017-0209-z)
+* [BindingDB](https://www.bindingdb.org/bind/index.jsp)
+* [DAVIS](http://staff.cs.utu.fi/~aatapa/data/DrugTarget/)
+* [KIBA](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-017-0209-z)
 
 ### File Structure
 ```bash
