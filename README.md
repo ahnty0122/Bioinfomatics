@@ -1,6 +1,6 @@
 ## _1. TFBS Data Analysis_
 #### Goal
-* Transcription Factor Binding Site Data preprocessing
+* Data preprocessing
 * Reduce Time consumption using multiprocessing in Dataframe 
 
 #### Data
