@@ -1,6 +1,8 @@
 /TFBS_data_preprocessing/*.csv
 /TFBS_data_preprocessing/*.txt
 /TFBS_data_preprocessing/*.txt
-/TFBS_data_preprocessing/*.ipynb
-/TFBS_data_preprocessing/add_ssequence.py
-/TFBS_data_preprocessing/complement_reverse.py
+/TFBS_data_preprocessing/add_sequence.py
+/TFBS_data_preprocessing/tfbs_version2_test.py
+/TFBS_data_preprocessing/TFBS_version2.py
+/TFBS_data_preprocessing/TFBS.ipynb
+/TFBS_data_preprocessing/evidence_null_test.ipynb

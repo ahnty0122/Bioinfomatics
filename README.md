@@ -4,7 +4,7 @@
 * Reduce Time consumption using multiprocessing in Dataframe 
 
 #### Data
-* private
+* __private__
 
 #### Preprocessing
 * using RestAPI, multiprocessing
@@ -12,7 +12,7 @@
 * Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
 
 #### Mapping with other data
-* private
+* __private__
 
 ## _2. Pathway Database_
 #### Goal
