@@ -1,3 +1,53 @@
+## TFBS Data Analysis
+#### Goal
+* Transcription Factor Binding Site Data preprocessing
+* Reduce Time consumption using multiprocessing in Dataframe 
+
+#### Data
+1. Chromosome Transcription Factor Binding Site DB
+2. DNA sequence Data
+3. Oncogene Data
+4. Tumor Suppressor gene Data
+
+#### Preprocessing (ver1)
+1. Add DNA sequence data (using RestAPI or fasta file, multiprocessing)
+2. Split Dataframe column (using explode, str.split)
+3. Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
+
+#### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
+1. Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
+2. Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
+3. Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)
+
+## Pathway Database
+#### Goal
+* STRING Pathway Database(PostgreSQL Database dump file) Annotation
+
+#### Database Table
+![stringdatabaseschema](https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG)
+
+##### Using Table
+1. actions table
+2. proteins table
+3. sets table
+4. sets_items table 
+
+#### Method Step
+1. Protein id -> Protein name (Join actions Table & proteins Table)
+2. Specify comment of pathway (Join sets Table & sets_items Table)
+3. Join result data of step 1, step 2
+
+## Gene Variant Check
+#### Data
+1. NCBI clinvar Data (variant information)
+2. Gene Sequence Data
+
+#### Goal
+* Check gene variant location
+
+## Multiprocessing mapping
+* Application of Multiprocessing
+
 ## Drug Target Interaction
 #### Goal
 * [Drug repurposing] Drug - Target binding affinity score prediction
@@ -56,53 +106,3 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 |  13  |      Ritonavir       | SARS-CoV2 3CL Protease |     492.19    |
 ....
 ```
-
-## TFBS Data Analysis
-#### Goal
-* Transcription Factor Binding Site Data preprocessing
-* Reduce Time consumption using multiprocessing in Dataframe 
-
-#### Data
-1. Chromosome Transcription Factor Binding Site DB
-2. DNA sequence Data
-3. Oncogene Data
-4. Tumor Suppressor gene Data
-
-#### Preprocessing (ver1)
-1. Add DNA sequence data (using RestAPI or fasta file, multiprocessing)
-2. Split Dataframe column (using explode, str.split)
-3. Edit DNA sequence to reverse complement sequence (using Biopython, multiprocessing)
-
-#### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
-1. Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
-2. Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
-3. Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)
-
-## Pathway Database
-#### Goal
-* STRING Pathway Database(PostgreSQL Database dump file) Annotation
-
-#### Database Table
-![stringdatabaseschema](https://user-images.githubusercontent.com/61795757/110055854-19251780-7da1-11eb-8805-1c892431b2cc.PNG)
-
-##### Using Table
-1. actions table
-2. proteins table
-3. sets table
-4. sets_items table 
-
-#### Method Step
-1. Protein id -> Protein name (Join actions Table & proteins Table)
-2. Specify comment of pathway (Join sets Table & sets_items Table)
-3. Join result data of step 1, step 2
-
-## Gene Variant Check
-#### Data
-1. NCBI clinvar Data (variant information)
-2. Gene Sequence Data
-
-#### Goal
-* Check gene variant location
-
-## Multiprocessing mapping
-* Application of Multiprocessing
