@@ -1,4 +1,4 @@
-## 1. TFBS Data Analysis
+## _1. TFBS Data Analysis_
 ### Goal
 * Transcription Factor Binding Site Data preprocessing
 * Reduce Time consumption using multiprocessing in Dataframe 
@@ -20,7 +20,7 @@
 * Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)  
 
 
-## 2. Pathway Database
+## _2. Pathway Database_
 ### Goal
 * STRING Pathway Database(PostgreSQL Database dump file) Annotation
 
@@ -39,7 +39,7 @@
 * Join result data of step 1, step 2  
 
 
-## 3. Gene Variant Check
+## _3. Gene Variant Check_
 ### Data
 * NCBI clinvar Data (variant information)
 * Gene Sequence Data
@@ -48,11 +48,11 @@
 * Check gene variant location  
 
 
-## 4. Multiprocessing mapping
+## _4. Multiprocessing mapping_
 * Application of Multiprocessing  
 
 
-## 5. Drug Target Interaction
+## _5. Drug Target Interaction_
 ### Goal
 * [Drug repurposing] Drug - Target binding affinity score prediction
 
