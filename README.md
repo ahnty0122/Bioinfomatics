@@ -17,8 +17,7 @@
 ### Mapping with promoter sequence data, Oncogene data, Tumor Suppressor Gene data (ver2)
 * Compute SmithWaterman Score between promoter sequence and TFBS sequence (using skbio.alignment, multiprocessing)
 * Compute Mismatch Score between promoter sequence and TFBS sequence (using multiprocessing)
-* Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)
-
+* Check oncogene, tumor suppressor gene in TFBS data (using multiprocessing)  
 
 
 ## 2. Pathway Database
@@ -37,7 +36,7 @@
 ### Method Step
 * Protein id -> Protein name (Join actions Table & proteins Table)
 * Specify comment of pathway (Join sets Table & sets_items Table)
-* Join result data of step 1, step 2
+* Join result data of step 1, step 2  
 
 
 ## 3. Gene Variant Check
@@ -46,12 +45,11 @@
 * Gene Sequence Data
 
 ### Goal
-* Check gene variant location
+* Check gene variant location  
 
 
 ## 4. Multiprocessing mapping
-* Application of Multiprocessing
-
+* Application of Multiprocessing  
 
 
 ## 5. Drug Target Interaction
