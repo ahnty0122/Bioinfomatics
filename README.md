@@ -14,6 +14,10 @@
 #### Mapping with other data
 * __private__
 
+#### Visualize result
+* using DNA_Features_Viewer
+# __private__
+
 ## _2. Pathway Database_
 #### Goal
 * STRING Pathway Database(__PostgreSQL Database dump file__) Annotation
