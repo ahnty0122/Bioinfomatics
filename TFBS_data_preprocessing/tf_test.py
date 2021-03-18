@@ -121,4 +121,5 @@ if __name__ == '__main__':
 	# 컬럼병 변경
 	result = result[['Artificial_promoter_sequence', 'TF', 'TF_sequence(target)', 'Artificial promoter sequence(query)', 'mismatch', 'length(TF)', 'chromosome_number', 'OCG', 'TSG']]
 	print(result)
+	result = result.drop_duplicates() # 중복 제거 후 저장
 	result.to_csv('testresult.txt', sep = '\t', index = False)
